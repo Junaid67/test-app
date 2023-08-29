@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Modal Dialog</h3>
+    </div>
+    <div class="card-body">
+        <div class="row" *ngIf="receivedData.length > 0">
+            <ng-container *ngFor="let item of receivedData">
+                <div *ngIf="item.isActive" class="col-6 col-lg-4 mt-2">
+                    <h6>{{ item.showText }}</h6>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
